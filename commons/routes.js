@@ -15,5 +15,11 @@ Router.route("/", {
   //render template travelSearch to search section of the layout template.
   yieldRegions: {
     travelSearch: {to: "search"}
-  }
+  },
+});
+
+Router.route("/create-travel", {
+  name: "createTravel",
+  layoutTemplate: "createTravelLayout",
+  template: "createTravel"
 });
